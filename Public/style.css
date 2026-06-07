@@ -1,0 +1,214 @@
+/* Poori website ki basic setting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Banner Image Lagane Ka Asal Tareeqa */
+.main-banner {
+    background-image: url('banner.jpg'); /* Jo image folder mein rakhi thi */
+    background-size: cover;              /* Image poori screen par fit ayegi */
+    background-position: center;         /* Image center mein rahegi */
+    height: 80vh;                        /* Screen ka 80% hissa cover karega */
+    position: relative;
+}
+
+/* Image ke upar halka kaala rang taake text saaf dikhe */
+.overlay {
+    background: rgba(0, 0, 0, 0.6); 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Text ka style */
+.banner-text {
+    color: white;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.alert-badge {
+    background-color: #ff0055; /* Bright Pink color dhyan khinchne ke liye */
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.banner-text h1 {
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+/* Attractive Button */
+.action-btn {
+    display: inline-block;
+    background-color: #ffcc00; /* Bright Yellow */
+    color: black;
+    text-decoration: none;
+    padding: 12px 30px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 15px;
+    box-shadow: 0 4px 10px rgba(255, 204, 0, 0.4);
+}
+
+/* Niche ka aam section */
+.content {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.content-img {
+    max-width: 100%;    /* Picture mobile screen se bahar nahi jaye gi */
+    width: 600px;       /* Aap isko apni marzi se chota barra kar sakte hain */
+    height: auto;
+    margin-top: 20px;   /* Text aur image ke beech thoda gap */
+    border-radius: 8px; /* Corners ko smooth karne ke liye */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Halka sa shadow effect */
+}
+/* Form ke andar elements ko upar niche set karne ke liye */
+.join-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    max-width: 400px; /* Box ka size control karne ke liye */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Phone Number Daalne Wala Box */
+.phone-input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    color: #333;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Jab input box par click karein to highlight ho */
+.phone-input:focus {
+    border-color: #25D366; /* WhatsApp Green color */
+}
+
+/* Submit Button Style */
+.submit-btn {
+    background-color: #25D366; /* Bright Green */
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #20ba5a;
+    transform: scale(1.02); /* Hover karne par halka sa bara hoga */
+}
+/* WhatsApp Verification Card Style */
+.wa-verify-box {
+    background: #ffffff;
+    padding: 35px 25px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.wa-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #075E54; /* Original WhatsApp Dark Green */
+}
+
+.wa-verify-box h2 {
+    color: #075E54;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.wa-msg {
+    color: #666666;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+/* 6 Dibbon ka container */
+.code-inputs-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+/* Single Digit Input Field Box */
+.otp-field {
+    width: 35px;
+    height: 45px;
+    font-size: 22px;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid #999999; /* WhatsApp style bottom line style */
+    outline: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Jab user kisi dibbe par click karega */
+.otp-field:focus {
+    border-bottom-color: #00a884; /* WhatsApp Light Green/Teal highlight */
+}
+
+/* Beech ka chota dash (-) */
+.divider {
+    font-size: 20px;
+    color: #999999;
+    margin: 0 2px;
+}
+
+.resend-text {
+    font-size: 13px;
+    color: #00a884;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* Action Button */
+.wa-submit-btn {
+    background-color: #00a884; /* WhatsApp Main Green */
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 168, 132, 0.3);
+    transition: background-color 0.2s;
+}
+
+.wa-submit-btn:hover {
+    background-color: #008f72;
+}

